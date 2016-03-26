@@ -1,0 +1,21 @@
+body
+  margin: 20px 0px 0px 20px
+  label
+    display: block
+    cursor: pointer
+    color: #666
+
+    .checkbox
+      display: none
+
+      &:checked + span::before
+        content: "\f205"
+        font-family: "FontAwesome"
+
+      + span::before
+        content: "\f204"
+        font-family: "FontAwesome"
+        margin-left: auto
+        display:inline-block
+        width: 1em
+        margin-right: 10px
